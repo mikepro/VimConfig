@@ -1,8 +1,11 @@
+:set nocompatible
 :set hlsearch
 :set incsearch
 :set autoindent
-syntax on
-set number 
+:syntax enable
+:set background=dark
+:colorscheme solarized
+:set number 
 :hi CursorLine   cterm=NONE ctermbg=lightblue ctermfg=white guibg=lightblue guifg=white
 :hi CursorColumn cterm=NONE ctermbg=lightblue ctermfg=white guibg=lightblue guifg=white
 :nnoremap <Leader>hl :set cursorline!<CR>
@@ -18,3 +21,8 @@ endif
 
 filetype plugin indent on
 :set nowrap
+:set shiftwidth=4
+:set tabstop=4
+:set expandtab
+:filetype plugin on
+filetype plugin indent on
